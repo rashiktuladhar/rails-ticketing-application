@@ -1,4 +1,40 @@
 Rails.application.routes.draw do
+  get 'ticket_prices/index'
+
+  get 'ticket_prices/show'
+
+  get 'ticket_prices/new'
+
+  get 'ticket_prices/edit'
+
+  get 'ticket_prices/create'
+
+  get 'ticket_prices/updatedestroy'
+
+  get 'flight_details/index'
+
+  get 'flight_details/show'
+
+  get 'flight_details/new'
+
+  get 'flight_details/edit'
+
+  get 'flight_details/create'
+
+  get 'flight_details/updatedestroy'
+
+  get 'booking_details/index'
+
+  get 'booking_details/show'
+
+  get 'booking_details/new'
+
+  get 'booking_details/edit'
+
+  get 'booking_details/create'
+
+  get 'booking_details/updatedestroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
