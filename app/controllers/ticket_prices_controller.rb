@@ -14,6 +14,9 @@ class TicketPricesController < ApplicationController
   def create
   end
 
-  def updatedestroy
+  def update
+  end
+
+  def destroy
   end
 end
