@@ -10,7 +10,7 @@
 	</ul>
 	<div class="tab-content container">
 		<div class="tab-pane active" id="one-way">
-			<%= simple_form_for FlightDetail.new do |f| %>
+			<%= simple_form_for FlightDetail.new , :method => :get  do |f|%>
 			<%= f.input :flight_type %>
 			
 			<div class="col-md-6 row">
@@ -39,14 +39,38 @@
 
 			<%= f.input :ticket_count, collection: 1..10, prompt: "Select your age", selected: 1 %>
 
-			<%= f.button :submit %>
+			<%= f.button :submit, value: "Search", :class => 'btn btn-success'  %>
 			<% end %>
 		</div>
 		
 		<div class="tab-pane" id="two-way">
-			<h3>Yet To Be Completed</h3>
+			<h3>Yet To Be Completed</h3> 
 		</div>
 	</div>
 </div>
 
 </div>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flightdetails.each do |flightdetail| %>
+      <tr>
+        <td><%= flightdetail.id %></td>
+        <td><%= flightdetail.flight_from %></td>
+        <td><%= flightdetail.flight_to %></td>
+        <td><%= link_to 'Show', flightdetail %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
