@@ -1,8 +1,8 @@
-<div class="container"><h2>Example tab 2 (using standard nav-tabs)</h2></div>
+<div class="container"><h2>Online Air Ticket Booking</h2></div>
 <div class="container">
 	<ul class="nav nav-tabs">
 		<li class="active">
-			<a  href="#one-way" data-toggle="tab">One Way</a>
+			<a  href="#one-way" data-toggle="tab"><i class="fa fa-plane"></i> One Way</a>
 		</li>
 		<li>
 			<a href="#two-way" data-toggle="tab">Two Way</a>
@@ -10,7 +10,6 @@
 	</ul>
 	<div class="tab-content container">
 		<div class="tab-pane active" id="one-way">
-			<h4>Search Flight For One Way Travel</h4>
 			<%= simple_form_for FlightDetail.new do |f| %>
 			<%= f.input :flight_type %>
 			
@@ -45,7 +44,9 @@
 		</div>
 		
 		<div class="tab-pane" id="two-way">
-			<h3>Notice the gap between the content and tab after applying a background color</h3>
+			<h3>Yet To Be Completed</h3>
 		</div>
 	</div>
+</div>
+
 </div>

@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+FlightDetail.create(flight_type: 'O', flight_from: 'Nepal', flight_to: 'Australia', departure_date: '2016-03-15', ticket_class: 'Business', ticket_count: 20, airlines: 'Nepal Airlines')
+FlightDetail.create(flight_type: 'O', flight_from: 'Nepal', flight_to: 'Australia', departure_date: '2016-03-16', ticket_class: 'Economy', ticket_count: 5, airlines: 'Australian Airlines')
