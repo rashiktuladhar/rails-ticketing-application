@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flight_id: 
+  flight_type: MyString
+  flight_from: MyString
+  flight_to: MyString
+  departure_date: 2016-03-27
+  arrival_date: 2016-03-27
+  ticket_class: MyString
+  ticket_count: 1
+  airlines: MyString
+  ticket_price_id: 
+
+two:
+  flight_id: 
+  flight_type: MyString
+  flight_from: MyString
+  flight_to: MyString
+  departure_date: 2016-03-27
+  arrival_date: 2016-03-27
+  ticket_class: MyString
+  ticket_count: 1
+  airlines: MyString
+  ticket_price_id: 
