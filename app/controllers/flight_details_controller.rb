@@ -20,4 +20,8 @@ class FlightDetailsController < ApplicationController
   def destroy
   end
 
+  def find
+    @flightdetails = FlightDetail.new
+  end
+
 end

@@ -1,2 +1,51 @@
-<h1>FlightDetails#index</h1>
-<p>Find me in app/views/flight_details/index.html.erb</p>
+<div class="container"><h2>Example tab 2 (using standard nav-tabs)</h2></div>
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li class="active">
+			<a  href="#one-way" data-toggle="tab">One Way</a>
+		</li>
+		<li>
+			<a href="#two-way" data-toggle="tab">Two Way</a>
+		</li>
+	</ul>
+	<div class="tab-content container">
+		<div class="tab-pane active" id="one-way">
+			<h4>Search Flight For One Way Travel</h4>
+			<%= simple_form_for FlightDetail.new do |f| %>
+			<%= f.input :flight_type %>
+			
+			<div class="col-md-6 row">
+				<%= f.input :flight_from, as: :select,
+				collection: [
+				'Nepal',
+				'USA',
+				'Australia'] %>
+			</div>
+			<div class="col-md-6 row pull-right">
+				<%= f.input :flight_to, as: :select,
+				collection: [
+				'Nepal',
+				'USA',
+				'Australia']%>
+			</div>
+			<div class="col-md-6 row">
+				<%= f.input :departure_date, as: :date, class: 'col-md-6' %>
+			</div>
+			<div class="col-md-6 row pull-right">
+				<%= f.input :ticket_class, as: :select,
+				collection: [
+				'Business',
+				'Economy']%>
+			</div>
+
+			<%= f.input :ticket_count, collection: 1..10, prompt: "Select your age", selected: 1 %>
+
+			<%= f.button :submit %>
+			<% end %>
+		</div>
+		
+		<div class="tab-pane" id="two-way">
+			<h3>Notice the gap between the content and tab after applying a background color</h3>
+		</div>
+	</div>
+</div>

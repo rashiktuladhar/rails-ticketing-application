@@ -29,6 +29,12 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Simple Form
 gem 'simple_form'
 
+# Country Select Gem
+gem 'country_select'
+
+# Fontawesome
+gem "font-awesome-rails"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
