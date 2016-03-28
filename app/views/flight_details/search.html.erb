@@ -1,0 +1,14 @@
+<table>
+
+  <h1><%= @query %></h1>
+
+  <tbody>
+    <% @flightdetails.each do |flightdetail| %>
+      <tr>
+        <td><%= flightdetail.flight_from %></td>
+        <td><%= flightdetail.flight_to %></td>
+        <td><%= flightdetail.airlines%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

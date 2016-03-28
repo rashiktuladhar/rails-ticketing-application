@@ -1,6 +1,6 @@
 class FlightDetailsController < ApplicationController
   def index
-      @flightdetails=FlightDetail.search(params[:ticket_class])
+    @flightdetail = FlightDetail.new
   end
 
   def show
@@ -19,6 +19,11 @@ class FlightDetailsController < ApplicationController
   end
 
   def destroy
+  end
+
+  def search
+      @query = params[:flight_detail][:ticket_class]
+      @flightdetails = FlightDetail.search(@query)
   end
 
 end
